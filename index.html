@@ -1,0 +1,230 @@
+<?DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Hind:500|Kaushan+Script'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+
+    <title>89 Maplewood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="site-content">
+        <div class="site-header">
+            <div class="container">
+                <a href="index.html" id="branding">
+                    <div class="logo-text">
+                        <h1 class="site-title">89 MAPLEWOOD</h1>
+                    </div>
+                </a>
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#about">ABOUT</a></li>
+                        <li class="menu-item2">/</li>
+                        <li class="menu-item"><a href="#photos">PHOTOS</a></li>
+                        <li class="menu-item2">/</li>
+                        <li class="menu-item"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-navigation"></div>
+            </div>
+        </div>
+
+        <div class="hero hero-slider">
+            <ul class="slides">
+                <li data-bg-image="images/12.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <div class="texttitle">
+                                <p class="mw-slideinfo1">PRESENTING</p><br>
+                                <p class="mw-slideinfo2">89 MAPLEWOOD</p><br>
+                                <p class="mw-slideinfo3">89 Maplewood Ave, Maplewood NJ</p>
+                            </div>
+                            <br>
+                            <span class="smalltext-home2">A short description about the image of the house that is displaying.</span>
+                        </div>
+                    </div>
+                </li>
+                <li data-bg-image="images/5.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span class="smalltext-home">A short description about the image of the house that is displaying.</span>
+                        </div>
+                    </div>
+                </li>
+                <li data-bg-image="images/6.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span class="smalltext-home">A short description about the image of the house that is displaying.</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <a id="about"></a>
+        <div class="fullwidth-block">
+            <div class="container">
+                <p class="title-about">About</p>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="section-title">Column for text</h3>
+                        <p class="section-text">Text detailing information about the house will go here. It may vary from rooms, styles, location, and any additional features.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">Column for text</h3>
+                        <p class="section-text">Text detailing information about the house will go here. It may vary from rooms, styles, location, and any additional features.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">Column for text</h3>
+                        <p class="section-text">Text detailing information about the house will go here. It may vary from rooms, styles, location, and any additional features.</p>
+                    </div>
+                </div>
+            </div>
+            <a id="photos"></a>
+        </div>
+
+        <br>
+        <div id="imgModalDiv" class="modal">         
+           <a style="text-decoration: none" href="#!" class="closeModal">&times;</a>
+           <div class="modalContainer"> 
+                <img class="modalSlides modal-content" src="images/1.jpg" />
+                <img class="modalSlides modal-content" src="images/2.jpg" />
+                <img class="modalSlides modal-content" src="images/3.jpg" />
+                <img class="modalSlides modal-content" src="images/4.jpg" />
+                <img class="modalSlides modal-content" src="images/5.jpg" />
+                <img class="modalSlides modal-content" src="images/6.jpg" />
+                <img class="modalSlides modal-content" src="images/7.jpg" />
+                <img class="modalSlides modal-content" src="images/8.jpg" />
+                <img class="modalSlides modal-content" src="images/9.jpg" />
+                <img class="modalSlides modal-content" src="images/10.jpg" />
+                <img class="modalSlides modal-content" src="images/11.jpg" />
+                <img class="modalSlides modal-content" src="images/12.jpg" />
+                <img class="modalSlides modal-content" src="images/13.jpg" />
+                <img class="modalSlides modal-content" src="images/14.jpg" />
+                <img class="modalSlides modal-content" src="images/15.jpg" />
+                <div class="img-left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="img-right" onclick="plusDivs(1)">&#10095;</div>
+                <div id="captionModal"></div>
+            </div>         
+        </div>
+        <div class="container">
+            <p class="title-about">Photos</p>
+
+            <br>
+            <div class="row">
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="1">
+                    <img src="images/1.jpg" class="imagelist-img" id="imgx" alt="Text about this image."/>
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="2">
+                    <img src="images/2.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="3">
+                    <img src="images/3.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="4">
+                    <img src="images/4.jpg" class="imagelist-img" id="imgx" alt="Text about this image."/>
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="5">
+                    <img src="images/5.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="6">
+                    <img src="images/6.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="7">
+                    <img src="images/7.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="8">
+                    <img src="images/8.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="9">
+                    <img src="images/9.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="10">
+                    <img src="images/10.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="11">
+                    <img src="images/11.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="12">
+                    <img src="images/12.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="13">
+                    <img src="images/13.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="14">
+                    <img src="images/14.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+                <div class="col-md-4" onclick="showCurrentImage(this.id);showDivs();" id="15">
+                    <img src="images/15.jpg" class="imagelist-img" id="imgx" alt="Text about this image." />
+                </div>
+            </div>
+            <br>
+            <a id="contact"></a>
+        </div>
+
+        <p class="title-about">Contact</p>
+
+        <div class="contact-container">
+            <p class="contact-desc">Drop your email so you can be contacted about the house.</p>
+            <br>
+            <input type="email" name="username" class="emailform" placeholder="Email Address" required>
+            <a href="mailto:emailhere"><input type="submit" value="Submit"></a>
+        </div>
+
+        </main>
+        <footer class="site-footer">
+            <hr>
+            <div class="footerbottom">
+                <div class="pull-left">
+                    <p class="addresstext">89 Maplewood</p>
+                    <p>89 Maplewood Ave, Maplewood, NJ 07040</p>
+                    <br>
+                    <a href="#" class="phone">+1 234 567 8910</a>
+                    <div class="colophon">Copyright 2018 &copy; 89 Maplewood.</div>
+                </div>
+                <div class="pull-right">
+                    <p class="contact-desc">Want to be contacted about the house? Send an email.</p>
+                    <br>
+                    <input type="email" name="username" class="emailform" placeholder="Email Address" required>
+                    <a href="mailto:emailhere"><input type="submit" value="Submit"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
