@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <title>HavanaMC</title>
     <link rel="stylesheet" href="style.css">
@@ -26,10 +26,12 @@
 
 <body>
     <div id="site-content">
-        <div class="site-header">
+
+        <div class="site-header2" id="sh2">
             <div class="container">
                 <a href="index.html" id="branding">
                     <div class="logo-text">
+                        <img class="logo" src="images/logo3.png" />
                         <h1 class="site-title">HavanaMC</h1>
                     </div>
                 </a>
@@ -40,16 +42,39 @@
                         <li class="menu-item2">/</li>
                         <li class="menu-item"><a href="#photos">PHOTOS</a></li>
                         <li class="menu-item2">/</li>
-                        <li class="menu-item"><a href="#contact">tab</a></li>
+                        <li class="menu-item"><a href="#contact">MAP</a></li>
                     </ul>
                 </div>
                 <div class="mobile-navigation"></div>
             </div>
         </div>
-
+    
         <div class="hero hero-slider">
             <ul class="slides">
-                <li data-bg-image="images/1.jpg">
+                
+                <div class="site-header">
+                    <div class="container">
+                        <a href="index.html" id="branding">
+                            <div class="logo-text">
+                                <img class="logo" src="images/logo3.png" />
+                                <h1 class="site-title">HavanaMC</h1>
+                            </div>
+                        </a>
+                        <div class="main-navigation">
+                            <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#about">ABOUT</a></li>
+                                <li class="menu-item2">/</li>
+                                <li class="menu-item"><a href="#photos">PHOTOS</a></li>
+                                <li class="menu-item2">/</li>
+                                <li class="menu-item"><a href="#contact">MAP</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-navigation"></div>
+                    </div>
+                </div>
+
+                <li data-bg-image="images/3.jpg">
                     <div class="container">
                         <div class="slide-title">
                             <div class="texttitle">
@@ -58,7 +83,7 @@
                                 <p class="mw-slideinfo3">extratext</p>
                             </div>
                             <br>
-                            <span class="smalltext-home2">Mazatlán, Mexico</span>
+                            <span class="smalltext-home2">Location, Location</span>
                         </div>
                     </div>
                 </li>
@@ -154,3 +179,16 @@
 
 </body>
 </html>
+
+<script>
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("sh2").style.top = "0";
+        } else {
+            document.getElementById("sh2").style.top = "-100px";
+        }
+    }
+</script>

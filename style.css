@@ -5,11 +5,13 @@
 
  /*General page styling*/
 html { background: #fff; color: #000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { background-color: #fff; color: #000; font-family: Times, helvetica, arial, sans-serif; font-size: 14px; line-height: normal; }
+body { background-color: #fff; color: #000; font-family: arial, sans-serif; font-size: 14px; line-height: normal; font-family: "Open Sans"; }
 #branding { float: left; } 
-#branding .site-title { color: #000; margin-top: 25px; }
-#branding .site-title { font-family: helvetica, helvetica, arial, sans-serif; font-weight: 600; font-size: 30px; }
+#branding .site-title { color: #000; margin-top: 20px; margin-left: 20px; color: white; display: inline-block; }
+#branding .site-title { font-weight: 600; font-size: 30px; }
 @media screen and (max-width: 991px) { #branding .site-title { margin-top: 28px; } }
+
+.logo { display: inline-block; width: 25px; height: 25px; margin-top: 15px; }
 
 /*Navbar & Mobile Navbar*/
 .main-navigation { float: right;  }
@@ -20,19 +22,23 @@ body { background-color: #fff; color: #000; font-family: Times, helvetica, arial
 .main-navigation .menu { display: inline-block; }
 @media screen and (min-width: 991px) { .main-navigation .menu { display: block !important; } }
 @media screen and (max-width: 990px) { .main-navigation .menu { display: none; } }
-.main-navigation .menu-item { display: inline-block; margin: 0 1rem; font-family: "Helvetica Neue", helvetica, arial, sans-serif; font-weight: 600; }
-.main-navigation .menu-item a { padding: 30px 15px; position: relative; display: block; color: #000; font-size: 18px; }
+.main-navigation .menu-item { display: inline-block; margin: 0 1rem; font-weight: 600; }
+.main-navigation .menu-item a { padding: 30px 15px; position: relative; display: block; color: #fff; font-size: 18px; }
 .main-navigation .menu-item:last-child a:after { display: none; }
-.main-navigation { display: inline-block; font-size: 25px; color: #404144; }
-.site-header { background: #fff; position: relative; z-index: 2; }
-.site-header { box-shadow: 0 0 10px rgba(0,0,0,0.5); -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); }
-.site-header { *zoom: 1; } .site-header:after { content: " "; clear: both; display: block; height: 0; overflow: hidden; }
-.menu-item2 { display: inline-block; font-size: 25px; margin: 0px 20px 0px 20px; color: #404144; }
+.main-navigation { display: inline-block; font-size: 25px; color: pink; }
+.site-header, .site-header2 { background: #fff; position: relative; z-index: 2; }
 
+.site-header, .site-header2 { *zoom: 1; } .site-header:after, .site-header2:after { content: " "; clear: both; overflow: hidden; }
+.menu-item2 { display: inline-block; font-size: 25px; margin: 0px 20px 0px 20px; color: #03bafc; }
+
+.site-header, .site-header2 { position: absolute; z-index: 99 !important; background: #42275a; background-color: rgba(0,0,0,.0); }
+
+ .site-header { width: 800px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
 .main-navigation .menu-item a:hover{ color: #0f3168 !important; }
 .site-title:hover { color: #0f3168 !important; }
-
 #branding:hover, .site-title:hover, .logo-text:hover { text-decoration: none !important; }
+.site-header { max-height: 50px !important; }
+.site-header2 { background: black; }
 
 /*Mobile navbar*/
 @media screen and (max-width: 991px) { .menu-item2 { display: none; } }
@@ -43,7 +49,7 @@ body { background-color: #fff; color: #000; font-family: Times, helvetica, arial
 .mobile-navigation .menu .current-menu-item a { color: #000; }
  
 /*Next image icons on background image*/
-.hero-slider { position: relative; z-index: 999; } .hero-slider .slides { list-style: none; *zoom: 1; }
+.hero-slider { position: relative; z-index: 997; } .hero-slider .slides { list-style: none; *zoom: 1; }
 .hero-slider .slides:after { content: " "; clear: both; display: block; height: 0; overflow: hidden; }
 .hero-slider .slides li { min-height:680px; background-size: cover; background-position: center center; }
 .hero-slider .slide-title { font-size: 36px;  }
@@ -66,9 +72,7 @@ body { background-color: #fff; color: #000; font-family: Times, helvetica, arial
 
 /*About section text*/
 .section-title { font-size: 36px; font-weight: 300; color: #000; }
-.section-title { font-family: helvetica, arial, sans-serif; }
 .section-text { font-size: 20px; color: #2b2b2b; }
-.title-about { text-align: center; font-size: 48px; margin: 4px; font-family: helvetica, arial, sans-serif; }
 
 /*Footer*/
 .site-footer { margin-top: 50px; font-family: helvetica, arial, sans-serif; color: #595959; font-size: 13px; }
@@ -95,13 +99,13 @@ input,.btn { max-width: 80px; padding: 8px; border: 1px solid; border-radius: 4p
 .smalltext-home { margin-top: 300px; max-width: 350px; }
 .smalltext-home2 { margin-top: 34px; max-width: 350px; }
 
-.mw-slideinfo1 { color: #000; display: inline-block; }
+.mw-slideinfo1 { color: #fff; display: inline-block; }
 .mw-slideinfo1 { font-family: 'Raleway', arial, sans-serif; font-size: 1.8rem; letter-spacing: 1px; font-weight: 300; }
 
-.mw-slideinfo2 { color: #000; display: inline-block; letter-spacing: -3px; }
+.mw-slideinfo2 { color: #fff; display: inline-block; letter-spacing: -3px; }
 .mw-slideinfo2 { font-family: helvetica, arial, sans-serif; font-size: 4vw; font-weight: 600; }
 
-.mw-slideinfo3 { color: #000; display: inline-block; letter-spacing: -2px; }
+.mw-slideinfo3 { color: #fff; display: inline-block; letter-spacing: -2px; }
 .mw-slideinfo3 { font-family: helvetica, arial, sans-serif; font-size: 2rem; display: block; margin: -5px 0px; }
 
 .mw-slideinfo1, .mw-slideinfo2 { margin: -8px 0px 0px 0px; }
@@ -129,3 +133,15 @@ input,.btn { max-width: 80px; padding: 8px; border: 1px solid; border-radius: 4p
 .modalContainer { text-align: center; height: 93% !important; }
 .modal-content { margin: auto; display: block; max-height: 83% !important; border: 1px solid white; }
 .modal-content { max-width: 95%; width: auto; height: auto; }
+
+
+
+
+#sh2 {
+   background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -100px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  z-index: 999 !important;
+}
