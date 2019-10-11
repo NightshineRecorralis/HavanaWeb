@@ -7,8 +7,9 @@
 html { background: #fff; color: #000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { background-color: #fff; color: #000; font-family: arial, sans-serif; font-size: 14px; line-height: normal; font-family: "Open Sans"; }
 #branding { float: left; } 
-#branding .site-title { color: #000; margin-top: 20px; margin-left: 20px; color: white; display: inline-block; }
-#branding .site-title { font-weight: 600; font-size: 30px; }
+#branding .site-title, .site-title2 { margin-top: 20px; margin-left: 20px; color: white; display: inline-block; }
+#branding .site-title, .site-title2 { font-weight: 600; font-size: 30px; }
+.site-title2 { color: #000; }
 @media screen and (max-width: 991px) { #branding .site-title { margin-top: 28px; } }
 
 .logo { display: inline-block; width: 25px; height: 25px; margin-top: 15px; }
@@ -53,7 +54,7 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 .hero-slider .slides:after { content: " "; clear: both; display: block; height: 0; overflow: hidden; }
 .hero-slider .slides li { min-height:680px; background-size: cover; background-position: center center; }
 .hero-slider .slide-title { font-size: 32px; }
-.hero-slider .slide-title span { display: inline-block; padding: 4px 8px; background: #fff; font-size: 20px; }
+.hero-slider .slide-title span { display: inline-block; padding: 4px 8px; background: #fff; font-size: 20px; border: 1px solid maroon; }
 .hero-slider .slide-title span { color: #000; border-radius: 3px; }
 .hero-slider .slide-title span { margin-bottom: 10px; }
 .hero-slider .flex-direction-nav { position: absolute; bottom: 200px; left: 0; right: 0; margin: auto; z-index: 999; height: 40px; }
@@ -62,9 +63,12 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 @media screen and (min-width: 992px) { .hero-slider .flex-direction-nav { width: 970px; } }
 @media screen and (min-width: 1200px) { .hero-slider .flex-direction-nav { width: 1170px; } }
 .hero-slider .flex-direction-nav li { display: inline-block; margin-right: 10px; }
-.hero-slider .flex-direction-nav li a { width: 64px; height: 64px; display: block; color: white; text-align: center; line-height: 2; font-size: 30px; }
-.hero-slider .flex-direction-nav li a.flex-prev { background: url("images/prev.png"); }
-.hero-slider .flex-direction-nav li a.flex-next { background: url("images/next.png"); }
+.hero-slider .flex-direction-nav li a { width: 64px; height: 64px; display: block; color: white; text-align: center; line-height: 0; font-size: 30px; }
+.hero-slider .flex-direction-nav li a.flex-prev { background: none; }
+.hero-slider .flex-direction-nav li a.flex-prev { background: none; }
+
+.hero-slider .flex-direction-nav li a.flex-prev .fa-angle-left { font-size: 60px; }
+.hero-slider .flex-direction-nav li a.flex-next .fa-angle-right { font-size: 60px; }
 
 /*Margins*/
 .fullwidth-block { padding: 50px 0; }
@@ -91,7 +95,7 @@ input[type=submit]:hover { background-color: #000; }
 input,.btn { max-width: 80px; padding: 8px; border: 1px solid; border-radius: 4px; display: inline-block; font-size: 17px; }
 .emailform { border: 1px solid gray; }
 .emailform { max-width: 200px; }
-.contact-desc { font-size: 17px; margin: 10px 0px; max-width: 350px; text-align: left; display: inline-block; }
+.contact-desc { font-size: 15px; margin: 5px 0px; max-width: 350px; text-align: left; display: inline-block; }
 .contact-container { text-align: center; font-size: 25px; font-family: Helvetica, arial, sans-serif; margin: 10px; }
 
 .loc-icon { font-size: 18px; color: darkred; margin-right: 5px; }
@@ -140,9 +144,7 @@ input,.btn { max-width: 80px; padding: 8px; border: 1px solid; border-radius: 4p
 
 
 #sh2 {
-   background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: #fff;  /* fallback for old browsers */
 
   position: fixed; /* Make it stick/fixed */
   top: -100px; /* Hide the navbar 50 px outside of the top view */
@@ -150,3 +152,9 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 999 !important;
 }
+
+#sh2 { color: black; }
+
+.color-black { color: black !important; }
+
+.main-navigation .color-black a { color: #000; }
