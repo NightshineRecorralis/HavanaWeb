@@ -16,7 +16,7 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 
 /*Navbar & Mobile Navbar*/
 .main-navigation { float: right;  }
-.main-navigation .menu-toggle { background: none; border: none; color: #000; font-size: 24px; display: inline-block; } 
+.main-navigation .menu-toggle { background: none; border: none; color: #fff; font-size: 24px; display: inline-block; } 
 .main-navigation .menu-toggle { vertical-align: middle;  padding: 30px 15px; outline: none; cursor: pointer; }
 @media screen and (min-width: 991px) { .main-navigation .menu-toggle { display: none !important; } }
 @media screen and (max-width: 990px) { .main-navigation .menu-toggle { display: block; } }
@@ -82,8 +82,8 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 .site-footer { margin-top: 50px; font-family: helvetica, arial, sans-serif; color: #595959; font-size: 13px; }
 .site-footer .container { border-top: 1px solid #000; position: relative; }
 .site-footer .container:after { content: " "; clear: both; display: block; overflow: hidden; height: 0; }
-.site-footer address, .site-footer .phone { display: inline-block; margin-right: 20px; }
-.site-footer .phone { font-size: 18px; }
+.site-footer address, .site-footer .help { display: inline-block; margin-right: 20px; }
+.site-footer .help { font-size: 16px; color: #2c6c83; }
 .site-footer .colophon { padding-top: 30px; clear: both; }
 .addresstext { font-weight: bold; font-size: 16px; color: #000; }
 .pull-left, .pull-right { margin: 20px 50px; display: inline-block; }
@@ -92,7 +92,6 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 /*Contact area*/
 input[type=submit] { background-color: #000; color: white; cursor: pointer; }
 input[type=submit]:hover { background-color: #000; }
-input,.btn { max-width: 80px; padding: 8px; border: 1px solid; border-radius: 4px; display: inline-block; font-size: 17px; }
 .emailform { border: 1px solid gray; }
 .emailform { max-width: 200px; }
 .contact-desc { font-size: 15px; margin: 5px 0px; max-width: 350px; text-align: left; display: inline-block; }
@@ -158,3 +157,13 @@ input,.btn { max-width: 80px; padding: 8px; border: 1px solid; border-radius: 4p
 .color-black { color: black !important; }
 
 .main-navigation .color-black a { color: #000; }
+.about-img { width: 52px; height: 52px; }
+
+.img-center { text-align: center; margin-right: 35px; margin-top: 25px; z-index: 9; }
+
+.img-map { max-width: 614px; max-height: 322px; border-radius: 130px; z-index: 9; max-width: 90%; }
+
+.map-btn { background: none; border: 4px solid #279cc7; border-radius: 10px; color: black; font-size: 16px; padding: 10px 7px; margin-left: 5px; font-weight: bold; cursor: pointer; margin-top: 5px; }
+
+#mapInfo { color: gray; font-size: 16px; margin-top: 10px; }
+

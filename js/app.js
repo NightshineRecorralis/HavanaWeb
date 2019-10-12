@@ -3,7 +3,7 @@
 	$(document).ready(function(){
 
 		// Cloning main navigation for mobile menu
-		$(".mobile-navigation").append($(".main-navigation .menu").clone());
+		$(".mobile-navigation").append($("#shownewnav .menu").clone());
 
 		// Mobile menu toggle 
 		$(".menu-toggle").click(function(){
@@ -73,4 +73,13 @@ function showDivs(n) {
     if (n < 1) {currentSlideInt = x.length}
     for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }	
 	x[currentSlideInt-1].style.display = "block";  
+}
+
+function showMapInfo() {
+	var x = document.getElementById("mapInfo");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
 }
