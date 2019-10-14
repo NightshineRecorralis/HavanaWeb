@@ -83,3 +83,21 @@ function showMapInfo() {
 		x.style.display = "none";
 	}
 }
+
+function showFullRules() {
+	var x = document.getElementById("FullRules");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+
+function showBasicRules() {
+	var x = document.getElementById("BasicRules");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}

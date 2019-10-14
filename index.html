@@ -40,9 +40,9 @@
                     <ul class="menu">
                         <li class="menu-item color-black"><a href="#about">ABOUT</a></li>
                         <li class="menu-item2">/</li>
-                        <li class="menu-item color-black"><a href="#photos">RULES</a></li>
+                        <li class="menu-item color-black"><a href="#rules">RULES</a></li>
                         <li class="menu-item2">/</li>
-                        <li class="menu-item color-black"><a href="#contact">MAP</a></li>
+                        <li class="menu-item color-black"><a href="#map">MAP</a></li>
                     </ul>
                 </div>
                 <div class="mobile-navigation"></div>
@@ -65,9 +65,9 @@
                             <ul class="menu">
                                 <li class="menu-item"><a href="#about">ABOUT</a></li>
                                 <li class="menu-item2">/</li>
-                                <li class="menu-item"><a href="#photos">RULES</a></li>
+                                <li class="menu-item"><a href="#rules">RULES</a></li>
                                 <li class="menu-item2">/</li>
-                                <li class="menu-item"><a href="#contact">MAP</a></li>
+                                <li class="menu-item"><a href="#map">MAP</a></li>
                             </ul>
                         </div>
                     </div>
@@ -141,11 +141,11 @@
                             <span class="smalltext-home"><i class="loc-icon fas fa-map-marker-alt"></i> Antarctica</span>
                         </div>
                     </div>
+                    <a id="about"></a>
                 </li>
             </ul>
         </div>
 
-        <a id="about"></a>
         <div class="fullwidth-block">
             <div class="container">
                 <div class="row">
@@ -174,6 +174,7 @@
             </div>
         </div>
 
+        <a id="map"></a>
         <br>
         <div class="contact-container">
             <img class="about-img" src="images/planet-earth.png" />
@@ -197,6 +198,73 @@
         <div class="contact-container">
             <h3 class="section-title">How to get started</h3>
             <p class="section-text">This section will detail commands &amp; guides to the server.</p><br>
+        </div>
+
+        <a id="rules"></a>
+        <br>
+        <div class="contact-container">
+            <img class="about-img" src="images/justice-scale.png" />
+            <h3 class="section-title">Rules</h3>
+            <p class="terms-text">Users must follow the rules at all times or they risk a potential punishment to their account.
+            </p><br>
+            <p class="terms-text">All punishments are handled on a case-by-case basis. Breaking a specific rule may not always
+                result in the same punishment every time. When investigating situations, context is the most important factor.</p><br>
+            <p class="terms-text">Below lists the terms, updated as of <i>October 12, 2019.</i></p><br>
+            
+            <button class="map-btn" onclick="showFullRules()">Show Full Terms of Service (Rules) &nbsp;<i class="fas fa-caret-down" style="font-size: 14px;"></i></button>
+            <button class="map-btn" onclick="showBasicRules()">Show Summary of Terms of Service &nbsp;<i class="fas fa-caret-down" style="font-size: 14px;"></i></button>
+
+            <div id="BasicRules" style="display: none"><br>
+                <h3 class="section-title">Summarized Terms of Service</h3>
+                <p class="terms-text"><b>1. Don't be mean.</p><br>
+                <p class="terms-text"><b>2. Don't share personal things about people.</p><br>
+                <p class="terms-text"><b>3. Don't spam/chat flood.</p><br>
+                <p class="terms-text"><b>4. Don't be annoying.</p><br>
+                <p class="terms-text"><b>5. Don't send illegal content.</p><br>
+                <p class="terms-text"><b>6. Don't link to anything fishy.</p><br>
+                <p class="terms-text"><b>7. Don't advertise yourself unless it's relevant.</p><br>
+                <p class="terms-text"><b>8. Don't threaten anyone.</p><br>
+                <p class="terms-text"><b>9. Don't cheat.</p><br>
+            </div>
+
+            <!-- Section A -->
+            
+            <div id="FullRules" style="display: none "><br>
+                <h3 class="section-title">Full Terms of Service</h3>
+                <p class="terms-title"><b>&sect; A. </b>Chat</p>
+                <br>
+                <p class="terms-text"><b>&sect; A1. </b>Users are protected by free speech and may give their positive or
+                    negative opinions on users, so long as that opinion is not discrimination or repeated harassment against the user.</p><br>
+                <p class="terms-text"><b>&sect; A2. </b>Users may not share personal details of other users, including real names,
+                    locations, emails, phone numbers, or any other information that may be considered personal. Users may release their
+                    own information at their own discretion as long as that information is not of malicious intent.</p><br>
+                <p class="terms-text"><b>&sect; A3. </b>Users may not send repeated messages of the same (or similar) text, or flooding chat with meaningless text.</p><br>
+                <p class="terms-text"><b>&sect; A4. </b>Users may not be annoying or a nuisance to the chat. This rule is up to the moderator's discretion.</p><br>
+
+                <!-- Section B -->
+                
+                <p class="terms-title"><b>&sect; B. </b>Content</p>
+                <br>
+                <p class="terms-text"><b>&sect; B1. </b>Users may not send illegal content.</p><br>
+                <p class="terms-text"><b>&sect; B2. </b>Users should not link to unreputable, illegal, or sources that may
+                    phish other users.</p><br>
+                
+                <!-- Section D -->
+                
+                <p class="terms-title"><b>&sect; D. </b>Promotion &amp; Advertising</p>
+                <br>
+                <p class="terms-text"><b>&sect; D1. </b>Users may promote their own content, such as websites, channels, videos, or live
+                    streams, as long as it is relavent to the conversation or server and not random advertisement.</p><br>
+                <p class="terms-text"><b>&sect; D3. </b>Users must bear in mind <b>§ B2</b> when promoting content.</p><br>
+                
+                <!-- Section E -->
+                
+                <p class="terms-title"><b>&sect; E. </b>Use of Service</p>
+                <br>
+                <p class="terms-text"><b>&sect; E1. </b>Threats of any kind against the user or the service will result in a permanent
+                    ban.</p><br>
+                <p class="terms-text"><b>&sect; E2. </b>Users may not use modifications such as spam bots, hacked clients, XRay, etc. Acceptable client modifications may include OptiFine and Shaders.</p>
+            </div>
         </div>
 
         </main>
