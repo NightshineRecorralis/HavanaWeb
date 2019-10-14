@@ -37,18 +37,6 @@ for (var i = 0; i < imagesNew.length; i++) {
 	}
 }
 
-var span = document.getElementsByClassName("closeModal")[0];
-span.onclick = function() {
-	modalNew.style.display = "none";
-}
-
-// Modal escaping
-$(document).keyup(function(e) {
-	if (e.keyCode == 27) { // 27 is the escape key
-	    modalNew.style.display = "none";
-   }
-});
-
 // Switching images in Modal code
 
 var slideIndex = 1;
