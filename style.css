@@ -18,11 +18,9 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 .main-navigation { float: right;  }
 .main-navigation .menu-toggle { background: none; border: none; color: #fff; font-size: 24px; display: inline-block; } 
 .main-navigation .menu-toggle { vertical-align: middle;  padding: 30px 15px; outline: none; cursor: pointer; }
-@media screen and (min-width: 991px) { .main-navigation .menu-toggle { display: none !important; } }
-@media screen and (max-width: 990px) { .main-navigation .menu-toggle { display: block; } }
 .main-navigation .menu { display: inline-block; }
 @media screen and (min-width: 991px) { .main-navigation .menu { display: block !important; } }
-@media screen and (max-width: 990px) { .main-navigation .menu { display: none; } }
+@media screen and (max-width: 990px) { .main-navigation .menu { display: none;  } .site-title2 { margin-top: 25px; } }
 .main-navigation .menu-item { display: inline-block; margin: 0 1rem; font-weight: 600; }
 .main-navigation .menu-item a { padding: 30px 15px; position: relative; display: block; color: #fff; font-size: 18px; }
 .main-navigation .menu-item:last-child a:after { display: none; }
@@ -34,7 +32,7 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 
 .site-header, .site-header2 { position: absolute; z-index: 99 !important; background: #42275a; background-color: rgba(0,0,0,.0); }
 
- .site-header { width: 800px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
+.site-header { width: 800px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
 .main-navigation .menu-item a:hover{ color: #0f3168 !important; }
 .site-title:hover { color: #0f3168 !important; }
 #branding:hover, .site-title:hover, .logo-text:hover { text-decoration: none !important; }
@@ -71,7 +69,7 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 .hero-slider .flex-direction-nav li a.flex-next .fa-angle-right { font-size: 60px; }
 
 /*Margins*/
-.fullwidth-block { padding: 50px 0; }
+.fullwidth-block { padding: 20px 0; }
 .fullwidth-block.image-block { min-height: 300px; }
 
 /*About section text*/
@@ -95,7 +93,7 @@ input[type=submit]:hover { background-color: #000; }
 .emailform { border: 1px solid gray; }
 .emailform { max-width: 200px; }
 .contact-desc { font-size: 15px; margin: 5px 0px; max-width: 350px; text-align: left; display: inline-block; }
-.contact-container { text-align: center; font-size: 25px; margin: 10px; }
+.contact-container { text-align: center; font-size: 25px; margin: 10px; margin-bottom: 0px; }
 
 .loc-icon { font-size: 18px; color: darkred; margin-right: 5px; }
 
