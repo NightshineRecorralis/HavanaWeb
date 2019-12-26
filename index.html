@@ -27,7 +27,7 @@
 <body>
     <div id="site-content">
 
-        <div class="site-header2" id="sh2">
+        <div class="site-header2" id="scrollNav">
             <div class="container">
                 <a href="index.html" id="branding">
                     <div class="logo-text">
@@ -78,8 +78,8 @@
                         <div class="slide-title">
                             <div class="texttitle">
                                 <br>
-                                <p class="mw-slideinfo2">Make an empire, on Earth</p><br>
-                                <p class="mw-slideinfo3">play.havanamc.com</p>
+                                <p class="make-an-empire-text">Make an empire, on Earth</p><br>
+                                <p class="ip-text">play.havanamc.com</p>
                             </div>
                             <br>
                             <span class="smalltext-home2"><i class="loc-icon fas fa-map-marker-alt"></i> Strait of Hormuz</span>
@@ -304,13 +304,14 @@
 
 <script>
 
+    /* Scroll Nav */
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("sh2").style.top = "0";
+            document.getElementById("scrollNav").style.top = "0";
         } else {
-            document.getElementById("sh2").style.top = "-100px";
+            document.getElementById("scrollNav").style.top = "-100px";
         }
     }
 </script>
