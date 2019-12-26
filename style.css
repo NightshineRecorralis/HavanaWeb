@@ -1,9 +1,9 @@
 /*
- * HavanaMC
- * havanamc.com
- */
+* HavanaMC
+* havanamc.com
+*/
 
- /*General page styling*/
+/*General page styling*/
 html { background: #fff; color: #000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { background-color: #fff; color: #000; font-family: arial, sans-serif; font-size: 14px; line-height: normal; font-family: "Open Sans"; }
 #branding { float: left; } 
@@ -24,18 +24,15 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 @media screen and (min-width: 991px) { .main-navigation .menu { display: block !important; }  .site-title2 { margin-top: 22px; } }
 @media screen and (max-width: 990px) { .main-navigation .menu { display: none; } .site-title2 { margin-top: 30px; }}
 .main-navigation .menu-item { display: inline-block; margin: 0 1rem; font-weight: 600; }
-.main-navigation .menu-item a { padding: 30px 15px; position: relative; display: block; color: #fff; font-size: 18px; }
+.main-navigation .menu-item a { padding: 30px 10px; position: relative; display: block; color: #fff; font-size: 18px; }
 .main-navigation .menu-item:last-child a:after { display: none; }
 .main-navigation { display: inline-block; font-size: 25px; color: pink; }
 .site-header, .site-header2 { background: #fff; position: relative; z-index: 2; }
-
 .site-header, .site-header2 { *zoom: 1; } .site-header:after, .site-header2:after { content: " "; clear: both; overflow: hidden; }
-.menu-item2 { display: inline-block; font-size: 25px; margin: 0px 20px 0px 20px; color: #03bafc; }
-
+.menu-item2 { display: inline-block; font-size: 25px; margin: 0px 15px 0px 15px; color: #03bafc; }
 .site-header, .site-header2 { position: absolute; z-index: 99 !important; background: #42275a; background-color: rgba(0,0,0,.0); }
-
- .site-header { width: 800px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
-.main-navigation .menu-item a:hover{ color: #0f3168 !important; }
+.site-header { width: 900px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
+.main-navigation .menu-item a:hover { color: #0f3168 !important; }
 .site-title:hover { color: #0f3168 !important; }
 #branding:hover, .site-title:hover, .logo-text:hover { text-decoration: none !important; }
 .site-header { max-height: 50px !important; }
