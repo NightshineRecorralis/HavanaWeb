@@ -93,7 +93,6 @@ input[type=submit]:hover { background-color: #000; }
 .emailform { max-width: 200px; }
 .contact-desc { font-size: 15px; margin: 5px 0px; max-width: 350px; text-align: left; display: inline-block; }
 .contact-container { text-align: center; font-size: 25px; margin: 10px; margin-bottom: 0px; }
-
 .loc-icon { font-size: 18px; color: darkred; margin-right: 5px; }
 
 /*Text on image*/
@@ -147,7 +146,6 @@ input[type=submit]:hover { background-color: #000; }
 .terms-title { font-size: 30px; margin-top: 25px; color: #383636; }
 .terms-text { display: inline-block; margin-bottom: 20px; font-size: 18px; max-width: 750px; line-height: 1.5; font-size: 16px; }
 
-
 /* Wiki Page */
 .wiki-div { text-align: center; margin-top: 150px; }
 .wiki-title { font-size: 37px; font-weight: bold; }
@@ -160,3 +158,4 @@ input[type=submit]:hover { background-color: #000; }
 .cmd { background: rgb(235, 235, 235); color: rgb(100, 170, 197); padding: 2px; border-radius: 5px; }
 .wiki-img { border: 2px solid grey; margin: 10px 0px; max-width: 95%; }
 .img-res { margin-top: -5px; font-size: 14px; }
+

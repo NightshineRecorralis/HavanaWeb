@@ -48,3 +48,12 @@ function showBasicRules() {
 		x.style.display = "none";
 	}
 }
+
+function showVoteList() {
+	var x = document.getElementById("voteList");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
