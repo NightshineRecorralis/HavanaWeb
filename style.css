@@ -7,6 +7,7 @@
 html { background: #fff; color: #000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { background-color: #fff; color: #000; font-family: arial, sans-serif; font-size: 14px; line-height: normal; font-family: "Open Sans"; }
 #branding { float: left; } 
+* { max-width: 100%; }
 #branding .site-title, .site-title2 { margin-top: 20px; margin-left: 20px; color: white; display: inline-block; }
 #branding .site-title, .site-title2 { font-weight: 600; font-size: 30px; }
 .site-title2 { color: #000; }
@@ -22,7 +23,14 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 @media screen and (max-width: 990px) { .main-navigation .menu-toggle { display: block; } }
 .main-navigation .menu { display: inline-block; }
 @media screen and (min-width: 991px) { .main-navigation .menu { display: block !important; }  .site-title2 { margin-top: 22px; } }
-@media screen and (max-width: 990px) { .main-navigation .menu { display: none; } .site-title2 { margin-top: 30px; }}
+
+
+
+@media screen and (max-width: 990px) { .main-navigation .menu { display: none; }
+ .site-title2 { max-height: 80px; margin-top: 15px; } #scroll_menu-toggle { margin-top: -12px; margin-bottom: 12px; max-height: 70px; }}
+
+
+
 .main-navigation .menu-item { display: inline-block; margin: 0 1rem; font-weight: 600; }
 .main-navigation .menu-item a { padding: 30px 10px; position: relative; display: block; color: #fff; font-size: 18px; }
 .main-navigation .menu-item:last-child a:after { display: none; }
@@ -42,9 +50,9 @@ body { background-color: #fff; color: #000; font-family: arial, sans-serif; font
 @media screen and (max-width: 991px) { .menu-item2 { display: none; } }
 .mobile-navigation { clear: both; padding: 30px 0; display: none; }
 @media screen and (min-width: 991px) { .mobile-navigation { display: none !important; } }
-.mobile-navigation .menu { list-style: none; padding: 20px; border-top: 2px solid #000; border-bottom: 2px solid #000; }
-.mobile-navigation .menu a { padding: 10px 0; display: block; color: #000; font-size: 16px; }
-.mobile-navigation .menu .current-menu-item a { color: #000; }
+.mobile-navigation .menu { list-style: none; padding: 20px; border-top: 2px solid black; border-bottom: 2px solid black; }
+.mobile-navigation .menu a { padding: 10px 0; display: block; color: black; font-size: 16px; }
+.mobile-navigation .menu .current-menu-item a { color: black; }
  
 /*Next image icons on background image*/
 .hero-slider { position: relative; z-index: 997; } .hero-slider .slides { list-style: none; *zoom: 1; }
